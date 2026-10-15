@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Student Placement Portal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f2f5f9; color: #222; }
+    header { background: #0b3d91; color: #fff; padding: 20px; text-align: center; }
+    header p { margin-top: 6px; opacity: 0.9; }
+    .version { display: inline-block; margin-top: 10px; background: #2ecc71; color: #fff;
+               padding: 4px 12px; border-radius: 12px; font-size: 13px; font-weight: bold; }
+    nav { background: #072a66; text-align: center; padding: 10px; }
+    nav a { color: #fff; margin: 0 12px; text-decoration: none; font-weight: bold; }
+    section { max-width: 1100px; margin: 25px auto; padding: 0 15px; }
+    h2 { color: #0b3d91; margin-bottom: 15px; border-left: 5px solid #0b3d91; padding-left: 10px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 15px; }
+    .card { background: #fff; border-radius: 8px; padding: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .card h3 { color: #072a66; margin-bottom: 8px; }
+    .stat { text-align: center; }
+    .stat .num { font-size: 32px; font-weight: bold; color: #0b3d91; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+    th { background: #0b3d91; color: #fff; }
+    .notice { background: #fff8e1; border-left: 5px solid #f39c12; padding: 12px; margin-bottom: 10px; }
+    footer { background: #072a66; color: #fff; text-align: center; padding: 15px; margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Automated Student Placement Portal</h1>
+  <p>University Placement Cell</p>
+  <span class="version">Version 1.0 - Stable</span>
+</header>
+
+<nav>
+  <a href="#stats">Statistics</a>
+  <a href="#companies">Companies</a>
+  <a href="#drives">Drives</a>
+  <a href="#students">Students</a>
+  <a href="#announcements">Announcements</a>
+</nav>
+
+<section id="stats">
+  <h2>Placement Statistics 2026</h2>
+  <div class="grid">
+    <div class="card stat"><div class="num">842</div><p>Students Placed</p></div>
+    <div class="card stat"><div class="num">126</div><p>Recruiting Companies</p></div>
+    <div class="card stat"><div class="num">44 LPA</div><p>Highest Package</p></div>
+    <div class="card stat"><div class="num">8.2 LPA</div><p>Average Package</p></div>
+  </div>
+</section>
+
+<section id="companies">
+  <h2>Company Profiles &amp; Eligibility</h2>
+  <div class="grid">
+    <div class="card"><h3>TechNova Systems</h3><p>Role: Software Engineer</p><p>Package: 12 LPA</p><p>Eligibility: CGPA 7.5+, no active backlogs</p></div>
+    <div class="card"><h3>DataSphere Analytics</h3><p>Role: Data Analyst</p><p>Package: 9 LPA</p><p>Eligibility: CGPA 7.0+, SQL &amp; Python</p></div>
+    <div class="card"><h3>CloudPeak Solutions</h3><p>Role: DevOps Engineer</p><p>Package: 14 LPA</p><p>Eligibility: CGPA 8.0+, Docker/K8s basics</p></div>
+    <div class="card"><h3>SecureNet Labs</h3><p>Role: Security Analyst</p><p>Package: 11 LPA</p><p>Eligibility: CGPA 7.0+, networking knowledge</p></div>
+  </div>
+</section>
+
+<section id="drives">
+  <h2>Upcoming Recruitment Drives</h2>
+  <table>
+    <tr><th>Company</th><th>Date</th><th>Venue</th><th>Mode</th></tr>
+    <tr><td>TechNova Systems</td><td>22 Oct 2026</td><td>Main Auditorium</td><td>Offline</td></tr>
+    <tr><td>DataSphere Analytics</td><td>28 Oct 2026</td><td>Online</td><td>Virtual</td></tr>
+    <tr><td>CloudPeak Solutions</td><td>05 Nov 2026</td><td>Seminar Hall 2</td><td>Offline</td></tr>
+    <tr><td>SecureNet Labs</td><td>12 Nov 2026</td><td>Lab Block 3</td><td>Offline</td></tr>
+  </table>
+</section>
+
+<section id="students">
+  <h2>Student Profiles</h2>
+  <div class="grid">
+    <div class="card"><h3>Arjun R</h3><p>Branch: CSE</p><p>CGPA: 8.6</p><p>Status: Placed - TechNova</p></div>
+    <div class="card"><h3>Meera S</h3><p>Branch: IT</p><p>CGPA: 9.1</p><p>Status: Placed - CloudPeak</p></div>
+    <div class="card"><h3>Rahul K</h3><p>Branch: ECE</p><p>CGPA: 7.8</p><p>Status: Eligible</p></div>
+    <div class="card"><h3>Divya P</h3><p>Branch: CSE</p><p>CGPA: 8.2</p><p>Status: Shortlisted - DataSphere</p></div>
+  </div>
+</section>
+
+<section id="announcements">
+  <h2>Recruitment Announcements</h2>
+  <div class="notice">Pre-placement talk by TechNova Systems on 20 Oct 2026, 10:00 AM.</div>
+  <div class="notice">Resume submission deadline for CloudPeak drive: 01 Nov 2026.</div>
+  <div class="notice">Mock interview sessions every Saturday in the Placement Cell.</div>
+</section>
+
+<footer>
+  <p>&copy; 2026 University Placement Cell | Deployed via Jenkins, Docker &amp; Kubernetes</p>
+</footer>
+
+</body>
+</html>
